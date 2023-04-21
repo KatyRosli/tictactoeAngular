@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$font: 'Source Sans Pro';
+$background-color: #544F4B;
+$primary-color: #3CB0E1;
+$secondary-color: #F6DF81;
+$tertiary-color: #A49C98;
+
+body {
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin theme($theme: Button) {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-family: $font;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media (min-width: 320px) {
+    body {
+      display: flex;
+      justify-content: center;
+    }
+}
+  
+@media (min-width: 768px) {
+    body {
+      display: flex;
+      justify-content: center;
+    }
+}
+  
+@media (min-width: 1024px) {
+    body {
+      display: flex;
+      justify-content: center;
+    }
+}
