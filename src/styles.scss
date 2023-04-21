@@ -18,10 +18,10 @@ body {
 
 @mixin theme($theme: Button) {
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 24px;
     padding: 4px 8px;
     font-family: $font;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
 }
 

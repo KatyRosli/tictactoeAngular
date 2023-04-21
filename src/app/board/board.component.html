@@ -1,8 +1,10 @@
 <div class="board-page__container">
 <h2 class="board-page__title">Current Player: {{ player }} </h2>
+<div class="board-page__buttoncontainer">
 <button class="board-page__button" (click)='newGame()'>Start New Game</button>
+</div>
 <h3 class="board-page__displaywinner" *ngIf='winner'>
-    Player {{ winner }} won the game!
+    Player {{ winner }} won the game! 👏 🎉
 </h3>
 <main class="board-page__squarescontainer">
     <app-square

@@ -10,6 +10,28 @@
     padding-top: 16px;
 }
 
+.board-page__buttoncontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.board-page__button {
+    @include theme($theme: Button);
+    background-color: $primary-color;
+    color: $background-color;
+    border-color: $primary-color;
+    margin-bottom: 24px;
+    border-style: solid;
+}
+
+.board-page__displaywinner {
+    color: $secondary-color;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 48px;
+    text-align: center;
+}
+
 @media (min-width: 320px) {
     main {
         display: grid;

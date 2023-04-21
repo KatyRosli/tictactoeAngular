@@ -1,0 +1,16 @@
+@import '../.../../../styles.scss';
+
+.footer-page__container {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0 48px 0;
+    font-family: $font;
+    color: $primary-color;
+    size: 16px;
+    font-weight: 400;
+}
+
+a {
+    padding: 0 8px 0 8px;
+    color: $secondary-color;
+}
