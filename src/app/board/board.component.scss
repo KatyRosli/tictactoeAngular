@@ -1,12 +1,50 @@
 @import '../.../../../styles.scss';
 
-main {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-gap: 0px;
+.board-page__title {
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 300;
+    color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
 }
 
-app-square {
-    border: 1px gray solid;
-    height: 200px;
+@media (min-width: 320px) {
+    main {
+        display: grid;
+        grid-template-columns: 104px 104px 104px;
+        grid-gap: 0px;
+    }
+
+    app-square {
+        border: 1px $tertiary-color;
+        height: 104px;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 176px 176px 176px;
+        grid-gap: 0px;
+    }
+
+    app-square {
+        border: 1px $tertiary-color;
+        height: 176px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-gap: 0px;
+    }
+
+    app-square {
+        border: 1px $tertiary-color;
+        height: 200px;
+    }
 }
