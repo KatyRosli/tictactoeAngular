@@ -1,6 +1,21 @@
 # TictactoeAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+A fun responsive tic tac toe game!
+
+## Live Demo
+[Live Demo Link] (https://tictactoeangular-7247c.web.app/)
+
+
+## Build with ⚒️:
+FRONTEND:
+- Angular
+- TypeScript
+- HTML
+- SCSS
+- Figma
+
+DEPLOYMENT:
+- Firebase
 
 ## Development server
 
@@ -22,6 +37,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+# Author:
+👩 **Katy Rosli**
+- GitHub: [@KatyRosli](https://github.com/KatyRosli)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Show your support:
+Give a ⭐️ if you like this project!
+
+Thank you!
