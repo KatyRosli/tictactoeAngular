@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./board.component.scss']
 })
 export class BoardComponent implements OnInit {
-  squares!: ('X' | 'O')[];
-  xIsNext: boolean = false;
+  squares!: (null | 'X' | 'O')[];
+  xIsNext: boolean | null = false;
   winner: string | null | undefined;
 
   constructor() {

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-square',
@@ -6,7 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./square.component.scss']
 })
 export class SquareComponent {
-  @Input() value: 'X' | 'O';
+  @Input() value: 'X' | 'O' | null;
+  @Output() clickEvent = new EventEmitter<void>();
 
   constructor() {
     this.value = 'X'; //Initializing the value property to 'X'
