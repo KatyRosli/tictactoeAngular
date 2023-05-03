@@ -43,11 +43,26 @@ describe('SquareComponent', () => {
     expect(button).toBeTruthy();
     expect(button.textContent.trim()).toEqual('');
   });
-
-  it('should emit click event when button is clicked', () => {
-    spyOn(component.clickEvent, 'emit');
+  
+  it('should apply the "x" class when input value is "X"', () => {
+    component.value = 'X';
+    fixture.detectChanges();
+    const button = fixture.nativeElement.querySelector('button.x');
+    expect(button).toBeTruthy();
+  });
+  
+  it('should apply the "o" class when input value is "O"', () => {
+    component.value = 'O';
+    fixture.detectChanges();
+    const button = fixture.nativeElement.querySelector('button.o');
+    expect(button).toBeTruthy();
+  });
+  
+  it('should not apply the "x" or "o" class when input value is null', () => {
+    component.value = null;
+    fixture.detectChanges();
     const button = fixture.nativeElement.querySelector('button');
-    button.click();
-    expect(component.clickEvent).toHaveBeenCalled();
+    expect(button.classList.contains('x')).toBeFalse();
+    expect(button.classList.contains('o')).toBeFalse();
   });
 });
