@@ -14,8 +14,17 @@ FRONTEND:
 - SCSS
 - Figma
 
+TESTING FRAMEWORK:
+- Jasmine
+
+TEST RUNNER:
+- Karma
+
 DEPLOYMENT:
 - Firebase
+
+Passed all written test:
+- ![screenshot](./src/assets/images/TestingFrameworkJasmine.png)
 
 ## Development server
 
